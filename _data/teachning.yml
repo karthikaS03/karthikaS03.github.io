@@ -1,0 +1,25 @@
+ title: Education
+  type: time_table
+  contents:
+    - title: Instructor
+      institution: University of Georgia, Athens, Georgia, US
+      year: Spring 2017
+      description:
+        - title: Discrete Math 
+          contents: 
+            - Taught Discrete Math course to a class of 60 students
+            - Prepared course materials such as syllabi, homework assignments and handouts
+    - title: Teaching Assitant
+      institution: University of Georgia, Athens, Georgia, US
+      year: Fall 2015 to Fall 2016
+      description:
+        - title: Intro to Java Lab 
+          contents: 
+            - Handled multiple lab classes assisting students with lab programs and assessing their projects
+    - title: Educator
+      institution: Infosys Ltd, Mysore, India
+      year: 2012 - 2015
+      description:
+        - Trained incoming employees on fundamental programming and .NET technologies
+        - Mentored trainees on their .NET and windows phone app projects 
+    
