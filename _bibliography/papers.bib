@@ -109,3 +109,38 @@ bibtex_show={true},
   pages={181-188},
   doi={10.1109/SMARTCOMP52413.2021.00045},
   abbr={SMARTCOMP}}
+
+  @inproceedings{10.1145/3589334.3645656,
+author = {Subramani, Karthika and Perdisci, Roberto and Skafidas, Pierros-Christos and Antonakakis, Manos},
+title = {Discovering and Measuring CDNs Prone to Domain Fronting},
+year = {2024},
+isbn = {9798400701719},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3589334.3645656},
+doi = {10.1145/3589334.3645656},
+abstract = {Domain fronting is a network communication technique that involves leveraging (or abusing) content delivery networks (CDNs) to disguise the final destination of network packets by presenting them as if they were intended for a different domain than their actual endpoint. This technique can be used for both benign and malicious purposes, such as circumventing censorship or hiding malware-related communications from network security systems. Since domain fronting has been known for a few years, some popular CDN providers have implemented traffic filtering approaches to curb its use at their CDN infrastructure. However, it remains unclear to what extent domain fronting has been mitigated.To better understand whether domain fronting can still be effectively used, we propose a systematic approach to discover CDNs that are still prone to domain fronting. To this end, we leverage passive and active DNS traffic analysis to pinpoint domain names served by CDNs and build an automated tool that can be used to discover CDNs that allow domain fronting in their infrastructure. Our results reveal that domain fronting is feasible in 22 out of 30 CDNs that we tested, including some major CDN providers like Akamai and Fastly. This indicates that domain fronting remains widely available and can be easily abused for malicious purposes.},
+booktitle = {Proceedings of the ACM on Web Conference 2024},
+pages = {1859–1867},
+numpages = {9},
+keywords = {CDN, DNS, censorship, command and control, domain fronting},
+location = {<conf-loc>, <city>Singapore</city>, <country>Singapore</country>, </conf-loc>},
+series = {WWW '24}
+}
+
+@INPROCEEDINGS {,
+author = {H. Nguyen and K. Subramani and B. Acharya and R. Perdisci and P. Vadrevu},
+booktitle = {2024 IEEE Symposium on Security and Privacy (SP)},
+title = {C-FRAME: Characterizing and measuring in-the-wild CAPTCHA attacks},
+year = {2024},
+volume = {},
+issn = {2375-1207},
+pages = {197-197},
+abstract = {In this paper, we design and implement C-FRAME, the first measurement system to collect real-time, in-the-wild data on modern CAPTCHA attacks. For this, we study the recent evolution in the protocols of CAPTCHAs as well as human-driven farms that facilitate attacks against CAPTCHAs. This study leads us directly to the discovery of a unique vantage point to conduct a global-scale CAPTCHA attack measurement study. Harnessing this, we design and build C-FRAME to be CAPTCHA-agnostic and ethically considerate. We then deploy our system for a 92-day period resulting in capturing of 425,257 CAPTCHA attacks on 1417 sites. In order to characterize these attacks, we leverage a carefully designed qualitative analysis approach using 3 analysts. Our study results in delineation of 34 different CAPTCHA-attack categories with several interesting real world attack examples. Twitter received the largest number of CAPTCHA attacks overall (about 255,480 attack requests) most of which attempt to create bot accounts. We also categorized and captured attacks such as ticket scalping attempts (e.g. a Taylor Swift concert event in Brazil), fraudulent lawsuit claims, and abusive appointment booking attempts (e.g. a Spain visa site in China). We also found CAPTCHA-assisted attempts to download data from government website (e.g. websites of 20 US states). We ascribe our attacks to 58 different countries across 5 continents. We present a detailed measurement analysis to give insights on this attack data and also suggest some future potential remediation measures that can be inspired by our system.},
+keywords = {},
+doi = {10.1109/SP54263.2024.00182},
+url = {https://doi.ieeecomputersociety.org/10.1109/SP54263.2024.00182},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {may}
+}
