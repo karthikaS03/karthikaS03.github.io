@@ -18,7 +18,10 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I am a research scientist at the Georgia Institute of Technology, affiliated with the Astrolavos Lab. As a security researcher, I focus on investigating the security postures of Web and Network Technologies. I earned my PhD in Computer Science from the University of Georgia, where I had the privilege of collaborating with <a href="https://roberto.perdisci.com"> Roberto Perdisci </a> in his Network and Security Intelligence lab.  In my doctoral and postdoctoral work at UGA and GTech, I have designed, built
+I am a research scientist at the Georgia Institute of Technology, affiliated with the Astrolavos Lab. I earned my PhD in Computer Science from the University of Georgia, where I had the privilege of collaborating with <a href="https://roberto.perdisci.com"> Roberto Perdisci </a> in his Network and Security Intelligence lab.
+
+
+As a security researcher, I focus on investigating the security postures of Web and Network Technologies.  In my doctoral and postdoctoral work at UGA and GTech, I have designed, built
 and evaluated systems that measure and detect large-scale abuse of well-established as well as
 newly developed web and network technologies. This often entails a holistic approach that integrates security expertise, data mining techniques, browser instrumentation, customized crawlers, and cutting-edge machine learning and deep learning methodologies.
 
