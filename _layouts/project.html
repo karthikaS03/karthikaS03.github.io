@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<!-- _layouts/project.html: blog-style write-up for a research project -->
+{%- case page.category -%}
+  {%- when "hidden by design" -%}{%- assign theme_class = "theme-hidden" -%}
+  {%- when "obscured by complexity" -%}{%- assign theme_class = "theme-obscured" -%}
+  {%- else -%}{%- assign theme_class = "theme-expensive" -%}
+{%- endcase -%}
+{%- assign sorted_projects = site.projects | sort: "importance" -%}
+
+<div class="post {{ theme_class }}">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <div class="pa-meta">
+    <span class="pa-theme">{{ page.category | capitalize }}</span>
+    <span>{{ page.venue }}</span>
+    <span>{% for d in page.domains %}<span class="rs-tag">{{ d }}</span>{% endfor %}</span>
+    <span class="pa-links">
+      {%- if page.paper %}<a href="{{ page.paper }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif -%}
+      {%- if page.code %}<a href="{{ page.code }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif -%}
+    </span>
+  </div>
+
+  <article>
+    {{ content }}
+  </article>
+
+  {%- if page.citation %}
+  <hr>
+  <p class="pa-cite"><strong>Citation.</strong> {{ page.citation }}</p>
+  {%- endif %}
+
+  <nav class="pa-nav">
+    {%- for p in sorted_projects -%}
+      {%- if p.url == page.url -%}
+        {%- assign prev_i = forloop.index0 | minus: 1 -%}
+        {%- assign next_i = forloop.index0 | plus: 1 -%}
+        <span>{% if prev_i >= 0 %}{% assign prev = sorted_projects[prev_i] %}<a href="{{ prev.url | relative_url }}">&larr; {{ prev.title }}</a>{% endif %}</span>
+        <a href="{{ '/projects/' | relative_url }}">All projects</a>
+        <span>{% if next_i < sorted_projects.size %}{% assign next = sorted_projects[next_i] %}<a href="{{ next.url | relative_url }}">{{ next.title }} &rarr;</a>{% endif %}</span>
+      {%- endif -%}
+    {%- endfor -%}
+  </nav>
+
+</div>

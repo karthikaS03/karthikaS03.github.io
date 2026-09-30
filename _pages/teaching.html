@@ -1,0 +1,91 @@
+---
+layout: page
+permalink: /teaching/
+title: Teaching
+description: Courses, teaching experience, and mentoring across university, community, and industry settings.
+nav: true
+nav_order: 5
+courses:
+  - code: CSCI 4760
+    name: Computer Networks
+    level: Undergraduate
+    terms: [Spring 2026, Summer 2026, Fall 2026]
+  - code: CSCI 6760
+    name: Computer Networks
+    level: Graduate
+    terms: [Fall 2026]
+  - code: CSCI 4250/6250
+    name: Computer Security
+    level: Undergraduate / Graduate
+    terms: [Fall 2025]
+  - code: CSCI 3030
+    name: Computing, Ethics, and Society
+    level: Undergraduate
+    terms: [Fall 2025, Spring 2026]
+  - code: CSCI 1300
+    name: Introduction to Python
+    level: Undergraduate
+    terms: [Fall 2026]
+earlier:
+  - when: Spring 2017
+    role: Instructor
+    org: University of Georgia
+    desc: "CSCI 2610 Discrete Mathematics. Taught a class of 60 students and designed its assignments and assessments."
+  - when: 2015 – 2016
+    role: Teaching Assistant
+    org: University of Georgia
+    desc: "CSCI 1301 Introduction to Programming. Led lab sessions, helped students with lab programs, and assessed projects."
+  - when: 2014 – 2015
+    role: Volunteer Tutor
+    org: Make A Difference (MAD)
+    desc: Weekend tutoring in mathematics and physics for underprivileged children, connecting concepts to everyday applications.
+  - when: 2012 – 2015
+    role: Trainer, Education & Research
+    org: Infosys Ltd., Mysore, India
+    desc: "Trained batches of 100+ new recruits in Java, SQL, Web, and Microsoft .NET technologies; developed coursework for Web technologies and an e-learning portal; mentored intern teams through their final projects."
+interests: [Network security, Web security, Cybersecurity, Computer networks, Web programming, Introductory programming]
+---
+
+<div class="tc-philosophy">
+  <p>I believe education should inspire curiosity, critical thinking, and a genuine love for learning. My classes favor <strong>exploration over memorization</strong>: students are encouraged to ask "how" and "why," and every hands-on activity is tied to a clear learning outcome. For example, students work through self-guided activities to tell multiplexing apart from demultiplexing, and build a reliable communication protocol through iterative problem-solving.</p>
+  <p>As AI increasingly automates coding, I emphasize computational thinking, problem-solving, and the ability to critically evaluate AI-generated code.</p>
+</div>
+
+<div class="tc-stats">
+  <div><strong>5</strong><span>courses at UGA</span></div>
+  <div><strong>4</strong><span>terms as Lecturer</span></div>
+  <div><strong>8</strong><span>research mentees</span></div>
+  <div><strong>100+</strong><span>trainees per batch at Infosys</span></div>
+</div>
+
+<div class="tc-section-head"><h2>Lecturer, University of Georgia</h2><span>2025 – present</span></div>
+<div class="tc-courses">
+  {%- for c in page.courses %}
+  <div class="tc-course">
+    <div class="tc-code">{{ c.code }}</div>
+    <div class="tc-name">{{ c.name }}</div>
+    <div class="tc-level">{{ c.level }}</div>
+    <div class="tc-terms">{% for t in c.terms %}<span class="tc-term">{{ t }}</span>{% endfor %}</div>
+  </div>
+  {%- endfor %}
+</div>
+<p class="mt-3">As a <strong>2026 UGA Teaching Academy Early Career Fellow</strong>, I meet with a group of colleagues throughout the semester to exchange ideas and refine our teaching practices. I also follow guidance from the Well-being at UGA program to support students' well-being.</p>
+
+<div class="tc-section-head"><h2>Earlier Teaching</h2><span>2012 – 2017</span></div>
+<ul class="tc-timeline">
+  {%- for e in page.earlier %}
+  <li>
+    <div class="tc-when">{{ e.when }}</div>
+    <div><span class="tc-role">{{ e.role }}</span> &middot; <span class="tc-org">{{ e.org }}</span></div>
+    <div class="tc-desc">{{ e.desc }}</div>
+  </li>
+  {%- endfor %}
+</ul>
+
+<div class="tc-section-head"><h2>Mentoring</h2></div>
+<p>I have mentored <strong>4 PhD students, 3 master's students, and 1 undergraduate student</strong> through research projects and conference artifact evaluations. The undergraduate project was supported by a 2025 CURO Research Award. I have also served as an artifact evaluation mentor for ACSAC, and helped establish a Women in CyberSecurity (WiCyS) student chapter at UGA.</p>
+
+<div class="tc-section-head"><h2>Teaching Interests</h2></div>
+<div class="tc-interests">
+  {%- for i in page.interests %}<span class="tc-interest">{{ i }}</span>{% endfor %}
+</div>

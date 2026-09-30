@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle:  Research Engineer II
+subtitle: Lecturer, School of Computing, University of Georgia
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
@@ -15,16 +15,12 @@ profile:
   #   <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a research scientist at Georgia Institute of Technology, where I am affiliated with Astrolavos Lab.My research interests lie on the intersection of Usable Web security, Web Attacks and Defenses, Network Attack and Defenses and Machine Learning. I hold a PhD in Computer Science from the University of Georgia, where I had the opportunity to work with <a href="https://roberto.perdisci.com"> Roberto Perdisci </a> in his lab Network and Security Intelligence. My goal is to drive my passion for this field to make cybersecurity more accessible and user-friendly.
+I am a Lecturer in Computer Science at the University of Georgia, where I teach computer networks, cybersecurity, programming, and computing ethics. Previously, I was a Research Engineer II in the <a href="https://astrolavos.gatech.edu">Astrolavos Lab</a> at the Georgia Institute of Technology (2022–2025), working with  <a href="https://ece.gatech.edu/directory/manos-antonakakis"> Manos Antonakakis </a>  and Roberto Perdisci, and a Post-Doctoral Researcher in the NIS Lab at the University of Georgia. I hold a PhD in Computer Science from the University of Georgia (2021), where I was advised by <a href="https://roberto.perdisci.com">Roberto Perdisci</a> and  <a href="https://kyuhlee.github.io"> Kyu Hyung Lee </a>.
 
- <!-- My goal is to enhance online security and protect users from malicious attacks by researching new methodologies, and also utilizing machine learning algorithms to detect and prevent cyber attacks.
+My research challenges the security assumptions behind everyday web and network technologies and assesses them through large-scale measurement. I focus on **security through measurability**: making the *abuse of legitimate functionality* observable at scale, and turning that evidence into defenses that preserve legitimate use. My work spans web push advertising, service worker attacks, phishing and CAPTCHA-bypass ecosystems, in-browser defenses against scareware, domain fronting on CDNs, smart-home traffic privacy, and DDoS detection at Internet exchange points. It has appeared at venues including IEEE S&P, ACM IMC, The Web Conference, IEEE EuroS&P, ACSAC, and DIMVA. I also serve on program committees including NDSS, WWW, and ACSAC.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+Looking ahead, I am studying trust-signaling web features such as age-verification flows, abuse through AI-mediated interactions like embedded chatbots and browser agents, and the misuse of AI-generated websites for phishing and malware distribution. I care deeply about teaching and mentorship, and I am committed to making cybersecurity more accessible and inclusive.
