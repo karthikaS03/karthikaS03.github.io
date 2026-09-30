@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Karthika
 middle_name: 
 last_name: Subramani
-email: ks54471@uga.edu
+email: ksubramani@uga.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Karthika Subramani, Lecturer at the University of Georgia. Research on web and network security through large-scale measurement.
 footer_text: >
