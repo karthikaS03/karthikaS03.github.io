@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: Lecturer, School of Computing, University of Georgia
+subtitle: Lecturer, School of Computing, University of Georgia<span class="tagline">Security through measurability</span>
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:

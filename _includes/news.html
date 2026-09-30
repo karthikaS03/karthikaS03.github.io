@@ -1,30 +1,38 @@
-          
+
           <div class="news">
-            {% if site.news != blank -%} 
-            {%- assign news_size = site.news | size -%}
-            <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 22rem; overflow-y: auto;"{% endif %}>
+            {% if site.news != blank -%}
+            {%- assign news = site.news | reverse -%}
+            {%- assign news_by_year = news | group_by_exp: "item", "item.date | date: '%Y'" -%}
+            {%- for year in news_by_year %}
+            {%- if forloop.first %}
+            <!-- Most recent year: always shown -->
+            <div class="table-responsive">
+            {%- else %}
+            <!-- Earlier years: collapsed -->
+            <details class="news-year">
+              <summary>{{ year.name }}<span class="news-count">({{ year.size }})</span></summary>
+            <div class="table-responsive">
+            {%- endif %}
               <table class="table table-sm table-borderless">
-              {%- assign news = site.news | reverse -%}
-              {% if site.news_limit %}
-              {% assign news_limit = site.news_limit %}
-              {% else %}
-              {% assign news_limit = news_size %}
-              {% endif %}
-              {% for item in news limit: news_limit %} 
+              {%- for item in year.items %}
                 <tr>
                   <th scope="row">{{ item.date | date: "%b %Y" }}</th>
                   <td>
-                    {% if item.inline -%} 
+                    {% if item.inline -%}
                       {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%} 
+                    {%- else -%}
                       <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %} 
+                    {%- endif %}
                   </td>
                 </tr>
-              {%- endfor %} 
+              {%- endfor %}
               </table>
             </div>
-          {%- else -%} 
+            {%- unless forloop.first %}
+            </details>
+            {%- endunless %}
+            {%- endfor %}
+          {%- else -%}
             <p>No news so far...</p>
-          {%- endif %} 
+          {%- endif %}
           </div>

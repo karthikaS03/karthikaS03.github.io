@@ -1,6 +1,5 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
+# Optional per-venue badge links and colors for publications, keyed by the bib `abbr` field.
+# Badges without an entry use the site accent color, which keeps them consistent.
+# Example:
+# "IMC":
+#   url: https://conferences.sigcomm.org/imc/

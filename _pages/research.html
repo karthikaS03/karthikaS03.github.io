@@ -9,17 +9,14 @@ themes:
   - key: hidden by design
     num: "01"
     name: Hidden by Design
-    color: "#3b6fb6"
     summary: Abuse that hides in blind spots created the moment a feature is deployed.
   - key: obscured by complexity
     num: "02"
     name: Obscured by Complexity
-    color: "#2a9d8f"
     summary: Abuse that unfolds across sequences of interaction no single page or vantage point reveals.
   - key: expensive by convention
     num: "03"
     name: Expensive by Convention
-    color: "#7b61c9"
     summary: The assumption that measuring or defending against network abuse requires costly infrastructure.
 future:
   - title: Web features that signal trust
@@ -37,7 +34,7 @@ future:
 <div class="rs-grid">
 {%- for theme in page.themes %}
   {%- assign theme_projects = site.projects | where: "category", theme.key | sort: "importance" %}
-  <div class="rs-col" style="--rs-accent: {{ theme.color }};">
+  <div class="rs-col">
     <div class="rs-col-head"><h3>{{ theme.name }}</h3><span class="rs-num">{{ theme.num }}</span></div>
     <div class="rs-col-summary">{{ theme.summary }}</div>
     {%- for project in theme_projects %}

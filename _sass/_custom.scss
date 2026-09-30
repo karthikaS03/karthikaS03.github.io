@@ -9,9 +9,45 @@
   background: var(--global-card-bg-color);
 }
 
-.theme-hidden     { --rs-accent: #3b6fb6; }
-.theme-obscured   { --rs-accent: #2a9d8f; }
-.theme-expensive  { --rs-accent: #7b61c9; }
+// One accent everywhere; themes are distinguished by number and heading, not color
+:root { --rs-accent: var(--global-theme-color); }
+html[data-theme='dark'] { --rs-accent: var(--global-theme-color); }
+
+// ---------- Typography ----------
+$site-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+body, h1, h2, h3, h4, h5, h6, .navbar, .navbar-brand, .btn, .badge, .post-title, .post-description {
+  font-family: $site-font;
+}
+body { letter-spacing: -0.005em; }
+.post-title { font-weight: 600; letter-spacing: -0.02em; }
+.navbar-brand.title { font-weight: 400 !important; }
+
+// Tagline under the name on the About page
+.tagline { display: block; margin-top: .2rem; font-style: italic; color: var(--global-theme-color); }
+
+// Publication badges: dark text on the lighter dark-mode accent for contrast
+html[data-theme='dark'] .publications .abbr abbr,
+html[data-theme='dark'] .publications .abbr abbr a { color: #10202e !important; }
+html[data-theme='dark'] .pa-links a:hover { color: #10202e !important; }
+
+// ---------- News (current year open, earlier years collapsible) ----------
+.news-year {
+  border-top: 1px solid var(--global-divider-color);
+  summary {
+    cursor: pointer; padding: .45rem 0; font-weight: 600; color: var(--global-text-color);
+    list-style: none;
+    &::-webkit-details-marker { display: none; }
+    // CSS-drawn caret (avoids font/encoding issues with glyphs)
+    &::before {
+      content: ""; display: inline-block; width: 0; height: 0; margin: 0 .55rem 0 .1rem; vertical-align: middle;
+      border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 7px solid var(--global-theme-color);
+      transition: transform .15s;
+    }
+    .news-count { font-weight: 400; font-size: .85rem; color: var(--global-text-color-light); margin-left: .35rem; }
+  }
+  &[open] summary::before { transform: rotate(90deg); }
+}
+.news .table th { white-space: nowrap; font-weight: 500; color: var(--global-text-color-light); width: 6.5rem; }
 
 // ---------- Research page ----------
 .rs-lead { font-size: 1.05rem; }
