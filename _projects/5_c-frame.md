@@ -9,6 +9,7 @@ venue: "IEEE S&P 2024"
 domains: [Web]
 importance: 5
 category: obscured by complexity
+paper: /assets/pdf/c_frame_sp24.pdf
 citation: "Hoang Dai Nguyen, Karthika Subramani, Bhupendra Acharya, Roberto Perdisci, Phani Vadrevu. C-Frame: Characterizing and Measuring In-the-Wild CAPTCHA Attacks. IEEE Symposium on Security and Privacy (S&P), 2024."
 ---
 

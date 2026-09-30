@@ -9,6 +9,7 @@ venue: "WWW 2024 (oral)"
 domains: [Web, Network]
 importance: 7
 category: expensive by convention
+paper: /assets/pdf/CDN_DomainFronting.pdf
 citation: "Karthika Subramani, Roberto Perdisci, Pierros-Christos Skafidas, Manos Antonakakis. Discovering and Measuring CDNs Prone to Domain Fronting. The ACM Web Conference (WWW), 2024."
 ---
 
